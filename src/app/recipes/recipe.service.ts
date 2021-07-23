@@ -6,36 +6,51 @@ import {Subject} from "rxjs";
 
 @Injectable()
 export class RecipeService {
-  recipeSelected = new Subject<Recipe>();
+  recipesChanged = new Subject<Recipe[]>();
 
   private recipes: Recipe[] = [
     new Recipe('Menemen',
       'As I love',
       'https://iasbh.tmgrup.com.tr/56200e/812/467/0/74/826/549?u=https://isbh.tmgrup.com.tr/sbh/2019/01/11/1547193376274.jpg',
       [new Ingredient('domates', 5),
-                 new Ingredient('soğan',2)
+        new Ingredient('soğan', 2)
       ]),
     new Recipe('Hambuger',
       'Canınızı çektirecek hambuger',
       'https://cdn.yemek.com/mncrop/940/625/uploads/2015/01/hamburger-yeni.jpg',
       [
-                 new Ingredient('et',2),
-                 new Ingredient('turşu',2)
+        new Ingredient('et', 2),
+        new Ingredient('turşu', 2)
       ])
   ];
 
   constructor(private slService: ShoppingListService) {
   }
 
-  getRecipes(){
+  getRecipes() {
     return this.recipes.slice();
   }
 
-  getRecipe(index: number){
+  getRecipe(index: number) {
     return this.recipes.slice()[index];
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.slService.addIngredients(ingredients);
+  }
+
+  addRecipe(recipe: Recipe) {
+    this.recipes.push(recipe);
+    this.recipesChanged.next(this.recipes.slice());
+  }
+
+  updateRecipe(index: number, newRecipe: Recipe) {
+    this.recipes[index] = newRecipe;
+    this.recipesChanged.next(this.recipes.slice());
+  }
+
+  deleteRecipe(index: number) {
+    this.recipes.splice(index, 1);
+    this.recipesChanged.next(this.recipes.slice());
   }
 }
