@@ -1,6 +1,8 @@
 import {Component} from "@angular/core";
 import {NgForm} from "@angular/forms";
-import {AuthService} from "./auth.service";
+import {AuthResponseData, AuthService} from "./auth.service";
+import {Observable} from "rxjs";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -12,7 +14,7 @@ export class AuthComponent {
   isLoading = false;
   error: string = null;
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private router: Router) {
   }
 
   onSwitchMood() {
@@ -21,23 +23,34 @@ export class AuthComponent {
 
   onSubmit(authForm: NgForm) {
     this.isLoading = true;
+    console.log('deneme girdi1')
     if (!authForm.valid) {
+      this.isLoading = false;
+      console.log('deneme girdi2')
       return;
     }
+
     const email = authForm.value.email;
     const password = authForm.value.password;
 
+    let authObs: Observable<AuthResponseData>;
+
     if (this.isLoginMode) {
+      authObs = this.authService.signIn(email, password);
     } else {
-      this.authService.signup(email, password).subscribe(resData => {
-        console.log(resData);
-        this.isLoading = false;
-      }, errorRes => {
-        console.log(errorRes);
-        this.error = errorRes;
-        this.isLoading = false;
-      });
+      console.log('deneme girdi3')
+      authObs = this.authService.signup(email, password);
       authForm.reset();
     }
+
+    authObs.subscribe(resData => {
+      console.log(resData);
+      this.router.navigate(['/recipes']);
+      this.isLoading = false;
+    }, errorRes => {
+      console.log(errorRes);
+      this.error = errorRes;
+      this.isLoading = false;
+    });
   }
 }
