@@ -53,4 +53,28 @@ export class AuthComponent {
       this.isLoading = false;
     });
   }
+  // reflectionFrontEndTarifToSells(containerId: number, type: string, sellPrice: string) {
+  //   (this.containerForm.get('containers') as FormArray).controls.forEach(ct => {
+  //     if (containerId === ct.value.seaContainerType.id && 'frontTransport' === type) {
+  //       ct.get(['frontTransport']).get(['amount']).setValue(sellPrice.replace(/,/g, ''));
+  //     }
+  //     if (containerId === ct.value.seaContainerType.id && 'endTransport' === type) {
+  //       ct.get(['endTransport']).get(['amount']).setValue(sellPrice.replace(/,/g, ''));
+  //     }
+  //   });
+  //   this.frontEndTariffDetMobiles.forEach((fr, idx) => {
+  //     if (fr.seaContainerType.id === containerId && fr.frontEnd === type) {
+  //       this.frontEndTariffDetMobiles[idx].amount = sellPrice.replace(/,/g, '');
+  //     }
+  //     if (fr.seaContainerType.id === containerId && fr.frontEnd === type) {
+  //       this.frontEndTariffDetMobiles[idx].amount = sellPrice.replace(/,/g, '');
+  //     }
+  //   });
+  // }
+  //
+  // updateFrontEndTarifToSells(i: number, sellPrice: string) {
+  //   this.createdActivity.activitySeaFullEditDTO.
+  //     activityOperationDetailEditDTOs[((this.containerForm.get('containers') as FormArray).length - 1 - i)].
+  //     frontAmount = sellPrice.replace(/,/g, '');
+  }
 }
