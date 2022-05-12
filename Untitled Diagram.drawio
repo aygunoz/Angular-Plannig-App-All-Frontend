@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-12T05:40:50.854Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.50" etag="lGn-W9CfiyoQH1V2hF1v" version="18.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-12T05:44:14.573Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.50" etag="SVJNyPFCkGfGCjkA-J4X" version="18.0.1" type="github">
   <diagram name="Page-1" id="5f0bae14-7c28-e335-631c-24af17079c00">
-    <mxGraphModel dx="3563" dy="1263" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3255" dy="1105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="39150e848f15840c-4" value="&lt;div&gt;«interface»&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;project&lt;/b&gt;&lt;/div&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
           <mxGeometry x="180" y="125" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="39150e848f15840c-11" style="edgeStyle=none;rounded=0;html=1;dashed=1;labelBackgroundColor=none;startArrow=none;startFill=0;startSize=8;endArrow=open;endFill=0;endSize=16;fontFamily=Verdana;fontSize=12;exitX=0;exitY=0;exitDx=0;exitDy=40;exitPerimeter=0;" parent="1" source="EhGMXCnS99L2GmcN4ixf-6" edge="1">
+        <mxCell id="39150e848f15840c-11" style="edgeStyle=none;rounded=0;html=1;dashed=1;labelBackgroundColor=none;startArrow=none;startFill=0;startSize=8;endArrow=open;endFill=0;endSize=16;fontFamily=Verdana;fontSize=12;exitX=0;exitY=0;exitDx=0;exitDy=40;exitPerimeter=0;" parent="1" source="TKsg7f5eyZNoNTIvAzVv-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="210" as="targetPoint" />
           </mxGeometry>
@@ -610,6 +610,36 @@
         </mxCell>
         <mxCell id="TKsg7f5eyZNoNTIvAzVv-32" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;2 saat&lt;/span&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontSize=28;horizontal=1;" vertex="1" parent="1">
           <mxGeometry x="806.25" y="767" width="46.25" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-34" value="Tahmini süreyi geçtiğinde SMS bilgilendirmesi" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=10;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="345" y="639.5" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-35" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/mobile-and-internet-business/285/qr_code-128.png;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="92" y="242" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-36" value="" style="edgeStyle=none;rounded=0;html=1;dashed=1;labelBackgroundColor=none;startArrow=none;startFill=0;startSize=8;endArrow=none;endFill=0;endSize=16;fontFamily=Verdana;fontSize=12;exitX=0;exitY=0;exitDx=0;exitDy=40;exitPerimeter=0;" edge="1" parent="1" source="EhGMXCnS99L2GmcN4ixf-6" target="TKsg7f5eyZNoNTIvAzVv-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.00000000000023" y="210" as="targetPoint" />
+            <mxPoint x="90.00000000000023" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-37" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/mobile-and-internet-business/285/qr_code-128.png;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="221" y="242" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-38" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/mobile-and-internet-business/285/qr_code-128.png;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="242" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-39" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/mobile-and-internet-business/285/qr_code-128.png;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="92" y="377" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-40" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/mobile-and-internet-business/285/qr_code-128.png;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="221" y="379" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-41" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/mobile-and-internet-business/285/qr_code-128.png;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="379" width="28" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="TKsg7f5eyZNoNTIvAzVv-42" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.mobile_client;fillColor=#D2D3D3;gradientColor=none;labelBackgroundColor=none;fontSize=10;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="326.68" y="641" width="18.32" height="28.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
