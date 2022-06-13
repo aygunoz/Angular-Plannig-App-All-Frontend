@@ -76,5 +76,5 @@ export class AuthComponent {
   //   this.createdActivity.activitySeaFullEditDTO.
   //     activityOperationDetailEditDTOs[((this.containerForm.get('containers') as FormArray).length - 1 - i)].
   //     frontAmount = sellPrice.replace(/,/g, '');
-  }
+  // }
 }
