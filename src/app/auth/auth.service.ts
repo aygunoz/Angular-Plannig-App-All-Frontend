@@ -3,6 +3,7 @@ import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {catchError, tap} from "rxjs/operators";
 import {BehaviorSubject, throwError} from "rxjs";
 import {UserModel} from "./user.model";
+import {environment} from "../../environments/environment";
 
 
 export interface AuthResponseData {
@@ -25,7 +26,7 @@ export class AuthService {
 
   signup(email: string, password: string) {
     console.log('deneme girdi4')
-    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCX0ZB5KwZ3ohrlPh-UyO8REP9zUounB6A',
+    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + environment.firebaseAPIKey,
       {email, password, returnSecureToken: true})
       .pipe(catchError(this.handleError), tap(resDate => {
         this.handleAuthentication(resDate.email, resDate.localId, resDate.idToken, +resDate.expiresIn);
@@ -33,7 +34,7 @@ export class AuthService {
   }
 
   signIn(email: string, password: string) {
-    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCX0ZB5KwZ3ohrlPh-UyO8REP9zUounB6A',
+    return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + environment.firebaseAPIKey,
       {email, password, returnSecureToken: true})
       .pipe(catchError(this.handleError), tap(resDate => {
         this.handleAuthentication(resDate.email, resDate.localId, resDate.idToken, +resDate.expiresIn);
